@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="index.js"></script>
+    <title>Splitter</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.svg" alt="Logo do Splitter" />
+    </header>
+
+    <main>
+      <form action="bill-input">
+        <div class="bill distance">
+          <label for="">Bill</label>
+          <div class="input-box">
+            <img src="./images/icon-dollar.svg" alt="" />
+            <input type="number" id="bill-input" placeholder="0" />
+          </div>
+        </div>
+
+        <div class="tip distance">
+          <label>Select Tip %</label>
+          <div class="input-boxes">
+            <input type="button" value="5%" />
+            <input type="button" value="10%" />
+            <input type="button" value="15%" />
+            <input type="button" value="25%" />
+            <input type="button" value="50%" />
+            <input type="number" id="tip-input" placeholder="Custom" />
+          </div>
+        </div>
+
+        <div class="people">
+          <label for="people-input">Number of people</label>
+          <div class="input-box">
+            <img src="./images/icon-person.svg" alt="" />
+            <input type="number" id="people-input" placeholder="0" />
+          </div>
+        </div>
+      </form>
+
+      <section class="results">
+        <div class="results-values">
+          <div>
+            <p>
+              Tip Amount <br />
+              <span>/ person</span>
+            </p>
+            <p id="tip-amount_result">$0.00</p>
+          </div>
+
+          <div class="total">
+            <p>
+              Total <br />
+              <span>/ person</span>
+            </p>
+            <p id="total_result">$0.00</p>
+          </div>
+        </div>
+        <button>Reset</button>
+      </section>
+    </main>
+  </body>
+</html>

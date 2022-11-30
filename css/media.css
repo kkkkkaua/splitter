@@ -1,0 +1,55 @@
+@media (min-width: 950px) {
+  body {
+    min-height: 100vh;
+    justify-content: center;
+    gap: 8.8rem;
+  }
+
+  header {
+    height: fit-content;
+  }
+
+  main {
+    display: flex;
+    max-width: 92rem;
+    /* align-items: center; */
+    gap: 3.2rem;
+    border-radius: 25px;
+    max-height: 48rem;
+  }
+
+  .distance {
+    margin-bottom: 4rem;
+  }
+
+  form {
+    padding: 1.6rem;
+  }
+
+  form,
+  .results {
+    width: 100%;
+  }
+
+  .results {
+    padding: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-top: 0;
+  }
+
+  .results-values div {
+    margin-bottom: 4rem;
+  }
+
+  .results-values div p:last-child {
+    font-size: 4.8rem;
+  }
+
+  .tip-amount {
+    margin-bottom: 4rem;
+  }
+}

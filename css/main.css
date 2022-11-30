@@ -1,0 +1,134 @@
+.distance {
+  margin-bottom: 3.2rem;
+}
+
+.input-box {
+  background: var(--very-light-grayish-cyan);
+
+  display: flex;
+  align-items: center;
+
+  padding: 0.6rem 1.6rem;
+
+  border-radius: 0.5rem;
+}
+
+.input-box:hover {
+  outline: 2px solid var(--strong-cyan);
+}
+
+.input-box:has(input:focus) {
+  outline: 2px solid var(--strong-cyan);
+}
+
+.input-box input {
+  text-align: right;
+  background: transparent;
+
+  color: var(--very-dark-cyan);
+}
+
+.input-boxes {
+  margin-top: 1rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.6rem;
+}
+
+.input-boxes input[type='button'] {
+  background: var(--very-dark-cyan);
+  border-radius: 0.5rem;
+
+  color: var(--white);
+
+  padding-block: 0.6rem;
+}
+
+.input-boxes input[type='button']:hover {
+  background: var(--light-grayish-cyan);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-boxes input[type='number'] {
+  background: var(--very-light-grayish-cyan);
+  border-radius: 0.5rem;
+
+  text-align: center;
+}
+
+.input-boxes input[type='number']:hover,
+.input-boxes input[type='number']:focus {
+  outline: 2px solid var(--strong-cyan);
+}
+
+.results {
+  background: var(--very-dark-cyan);
+  border-radius: 1.5rem;
+
+  padding: 2.4rem;
+  margin-top: 3.2rem;
+}
+
+.results-values div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.results-values div:first-child {
+  margin-bottom: 2rem;
+}
+
+.tip-amount {
+  margin-bottom: 2rem;
+}
+
+.results p {
+  font-size: 1.6rem;
+}
+
+.results div p:first-child {
+  line-height: 2.4rem;
+  color: var(--white);
+}
+
+.results span {
+  font-size: 1.4rem;
+
+  color: var(--grayish-cyan);
+}
+
+.results div p:last-child {
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+  color: var(--strong-cyan);
+}
+
+.total {
+  margin-bottom: 3.2rem;
+}
+
+.results button {
+  width: 100%;
+
+  padding-block: 0.9rem;
+
+  font-size: 2rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+  color: var(--very-dark-cyan);
+
+  background: var(--strong-cyan);
+  border: none;
+  border-radius: 5px;
+}
+
+.results button:hover {
+  background: var(--light-grayish-cyan);
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
