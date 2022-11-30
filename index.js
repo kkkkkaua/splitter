@@ -4,7 +4,7 @@ let pessoas = 0
 let botaoAtivo = 0
 
 function receberConta() {
-  let conta = Number(document.querySelector('#bill-input').value)
+  conta = Number(document.querySelector('#bill-input').value)
   validarDados()
 }
 
@@ -28,7 +28,7 @@ function receberPorcentagem(x) {
 }
 
 function receberPessoas() {
-  let pessoas = Number(document.querySelector('#people-input').value)
+  pessoas = Number(document.querySelector('#people-input').value)
   validarDados()
   return
 }
