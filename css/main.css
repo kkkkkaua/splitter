@@ -51,6 +51,10 @@
   transition: 0.3s;
 }
 
+.input-boxes input[type='button'].buttonActive {
+  background: var(--strong-cyan);
+}
+
 .input-boxes input[type='number'] {
   background: var(--very-light-grayish-cyan);
   border-radius: 0.5rem;
